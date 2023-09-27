@@ -1,0 +1,36 @@
+<!-- form is used to collect user input . the user input can then be sent to a server for processing  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h2>Enquiry</h2>
+    <form action="">
+        Name: <input type="text" name="name" id="" placeholder="please enter you name "><br><br>
+        <!-- each form field's name attribute is used to identify the data associated with that field when it's sent to the server.  -->
+        Email: <input type="text" name="email" placeholder="please enter your Gmail ID "><br><br>
+        Message:
+        <textarea name="message" id=""  rows="2"></textarea> <br><br>
+        <!-- the name attribute must be same of radio buttons otherwise doesn't work -->
+        Gender:
+        <input type="radio" value="f" name="female"> female 
+        <input type="radio" value="f" name="female"> male
+        <br><br>
+        <!-- select element create a drop down manu -->
+        Country: <select name="" id="">
+            <option value="indea">Please Select a Country</option>
+            <optgroup label="ASIA">
+                <option value="indea">india</option>
+                <option value="pakistan">pakistan</option>
+            </optgroup>
+            <option>afghanistan</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
