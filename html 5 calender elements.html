@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Calendor Elements</title>
+</head>
+<body>
+    <!-- these elemets takes date from the browser -->
+    <form action="">
+        <fieldset>
+            <legend>html 5 Calendor elements</legend>
+            Date:
+            <input type="date" name="date"/>
+            <br/>
+            <br/>
+            Date Time:
+            <input type="datetime-local" name="local-time"/>
+            <br/>
+            <br/>
+            Time:
+            <input type="time" name="time"/>
+            <br/>
+            <br/>
+            <!-- we write in type='month' that browser knows that is for month -->
+            Month:
+            <input type="month" name="month"/>
+            <br/>
+            <br/>
+            Week:  <!-- we write this for user understanding -->
+            <input type="week" name="week"/>   <!-- we write this for the browser understanding like   type="week"   -->
+            <br/>
+            <br/>
+            Range:
+        
+            <input type="range" name="range" min="0" max="300"  value="90"> <!-- value= "90" I set this value by default for range-->
+            <br/>
+            <br/>
+            <input type="submit" name="Submit">
+            <input type="reset" name="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>
