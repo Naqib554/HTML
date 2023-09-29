@@ -1,0 +1,65 @@
+*{
+    background-color: rgb(226, 236, 236);
+    padding: 0%;
+    margin: 0%;
+}
+.main{
+    width: 104px;
+    height: 37px;
+    background-color: tomato;
+}
+#parent-row-1{
+    background-color: yellow;
+}
+.col1{
+    background-color: rebeccapurple;
+    float: left;
+    width: 50px;
+}
+.col2{
+    background-color: rgb(225, 124, 23);
+    width: 54px;
+    float: right;
+}
+#parent-row-2{
+    background-color: rgb(217, 226, 217);
+}
+.col_1{
+    background-color: rgb(197, 152, 243);
+    float: left;
+    width: 50px;
+}
+.col_2{
+    background-color: rgb(246, 224, 203);
+    width: 54px;
+    float: right;
+}
+
+/* text tag in property_list_1.html*/
+.text{
+    background-color: yellow;
+    color: blueviolet;
+    font-size: large;
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:60px ;
+}
+/* design peragraph */
+.para{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    height: 250px;
+    width: 500px;
+    margin-left: 200px;
+    margin-top: 200px;
+    text-align: justify;
+
+
+}
+.achor{
+    text-decoration: none;
+    /* this property remove the underline */

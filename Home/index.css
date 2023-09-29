@@ -1,0 +1,116 @@
+*{
+    padding: 0%;
+    margin: 1;
+}
+.main{
+    width: 1000px;
+    height: 540px;
+    background-color: rgb(91, 96, 88);
+}
+.row1{
+    width: 1000px;
+    height:100px;
+    background-color:rgb(247, 163, 163) ;
+    font-size: 50px;
+    text-align: center;
+
+}
+.row2{
+    width: 1000px;
+    height: 40px;
+    background-color: aqua;
+    color: rgb(236, 18, 55);
+    text-align: center;
+    font-size: 30px;
+}
+.row2-col1{
+    width: 200px;
+    height: 40px;
+    background-color: azure;
+    float: left;
+    /* float give direction to the div tag that is "row2-col1" and place it in the parent "row2" left side
+     when another div tag comes that is placed by the side of row2-col1 ok */
+   
+}
+.row2-col2{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(28, 255, 255);  
+    float: left;
+
+}
+.row2-col3{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(28, 255, 55);
+    float: left;
+
+}
+.row2-col4{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(211, 245, 42);
+    float: left;
+
+}
+.row2-col5{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(167, 239, 239);
+    float: left;
+
+}
+/* row3 design */
+.row3{
+    width: 1000px;
+    height: 200px;
+    background-color: brown;
+    /* the bellow property parent implement on his child */
+    text-align: center;
+    font-size: 30px;
+}
+.row3-col1{
+    width: 250px;
+    height: 200px;
+    background-color: blanchedalmond;
+    float: left;
+}
+.row3-col2{
+    width: 750px;
+    height: 200px;
+    background-color: rgb(80, 80, 139);
+    float: left;
+}
+
+.row4{
+    width: 1000px;
+    height: 100px;
+    background-color: pink
+}
+.row4-col1{
+    width: 330px;
+    height: 100px;
+    background-color: rgb(214, 181, 245);
+    float: left;
+}
+.row4-col2{
+    width: 330px;
+    height: 100px;
+    background-color: rgb(202, 145, 254);
+    float: left;
+}
+.row4-col3{
+    width: 340px;
+    height: 100px;
+    background-color: rgb(248, 247, 250);
+    float: left;
+}
+.row5{
+    margin-top: 3;
+    width: 1000px;
+    height: 100px;
+    background-color: aqua;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
