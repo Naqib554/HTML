@@ -1,0 +1,31 @@
+/* Apply styles to all iframes on the page */
+iframe {
+    border: 2px solid #333;
+    margin: 10px;
+    padding: 10px;
+    width: 800px;
+    height: 400px;
+}
+
+/* Apply specific styles to the first iframe*/
+iframe:first-of-type {
+    border-color: red;
+
+}
+
+/* Apply specific styles to the second iframe */
+ iframe:nth-of-type(2) {
+    border-color: blue;
+} 
+iframe:nth-of-type(3)
+{
+    border-color: aqua;
+}
+.a{
+    background-color: red;
+    /* margin: 20px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+
+}
