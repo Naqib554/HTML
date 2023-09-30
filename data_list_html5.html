@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>give suggestion to the user when user type in the form</title>
+</head>
+<body>
+    <form action="">
+        Course:
+        <!-- name="course" this identify the input field when form submitted-->
+        <!-- list="course":  it associates the <input> element with a <datalist> element. -->
+            <!-- This association allows the <input> element to display a list of suggestions from 
+            the <datalist> when the user starts typing in the input field. -->
+        <input type="text" name="course" autofocus="" list="course"/>
+        <datalist id="course">
+            <!-- value="PHP" this value submitted when click the submit button -->
+            <!-- if the item user typed that is not present the datalist then also it is submitted
+            and next time show suggestion of this item to the user  -->
+            <option value="PHP">PHP</option>
+            <option value="PYTHON">PYTHON</option>
+            <option value="Physics">Physics</option>
+        </datalist>
+        <br/>
+        <br/>
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>
