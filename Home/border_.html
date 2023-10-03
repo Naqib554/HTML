@@ -3,22 +3,33 @@
 <head>
     <style>
         .main{
+            margin: auto;
+            margin-top: 30px;
             width: 500px;
+            /* before apply the padding properyt must give width and hight otherwise it doesn't work */
+            /* padding: 10px; */
+            padding: 50px 5px 10px 15px;
             height: 200px;
             background-color: rgb(250, 152, 152);
             border: solid 5px  green;
+            text-align: center;
         }
         .row{
-            background-color: yellow;
-            width: 490px;
-            height: 100px;
+            background-color: rgb(48, 237, 177);
+            width: 470px;
+            /* margin-left and margin-right depend on the width of div tag */
+            height: 160px;
+            /* margin-top and margin-bottom depend on the height of div tag */
+            color: rgb(11, 4, 4);
             border-bottom:5px solid black;
             border-top:5px solid rgb(250, 80, 80);
             border-left:5px solid rgb(225, 222, 222);
-            border-right:5px solid rgb(82, 58, 222);
+            border-right:5px solid rgb(168, 153, 249);
             text-align: center;
             font-size: 40px;
-            
+            margin-left: 10px;
+            margin-right: 5px;
+            margin-bottom: 5px;
         }
 
     </style>
@@ -29,11 +40,11 @@
 <body>
     <!-- you must calculation when appling border on the  div child tag -->
     <div class="main">
-        hangu cmapus
+        Hangu Campus
         <div class="row">
-            Naqib ullah from hangu campus
+            Naqib ullah from hangu Campus <br>
+            Roll NO: HCS120202027
         </div>
-
     </div>
 </body>
 </html>
