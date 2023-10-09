@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>columns properties</title>
+    <style>
+        .main{
+            /* these columns property depend on each other  */
+            height: 100px;
+            /* column-count: 3; */
+            column-fill: auto;
+            column-gap: 50px;
+            /* column: role work like border property */
+            column-rule: 3px solid green;
+            /* column width work only when you don't specify the clumn-count property */
+            column-width: 400px;
+        }
+        .h2
+        {
+            column-span: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2 class="h2">web development</h2>
+        <p>
+            A web development course is a structured learning program that teaches the essential skills
+                and technologies needed to create websites and web applications. It typically covers HTML and CSS
+                for web page structure and styling, JavaScript for interactivity, and may delve into front-end and
+                back-end development using frameworks and languages like React, Node.js, or Python. Students learn 
+                about databases, version control, and development tools, with a focus on hands-on, project-based learning.
+                Online courses and platforms offer a range of options
+                for beginners and advanced learners, making it accessible to anyone interested in web development.
+        </p>
+        <p>
+            A web development course is a structured learning program that teaches the essential skills
+                and technologies needed to create websites and web applications. It typically covers HTML and CSS
+                for web page structure and styling, JavaScript for interactivity, and may delve into front-end and
+                back-end development using frameworks and languages like React, Node.js, or Python. Students learn 
+                about databases, version control, and development tools, with a focus on hands-on, project-based learning.
+                Online courses and platforms offer a range of options
+                for beginners and advanced learners, making it accessible to anyone interested in web development.
+        </p>
+
+    </div>
+</body>
+</html>
