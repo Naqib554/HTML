@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about form </title>
+    <!-- note: don't user br  this worK should done by CSS -->
+</head>
+<body>
+    <form action="backend.php">
+        <div>
+            <!-- for="value" : for value must be the id value -->
+            <!-- i have done this for the first two lables check it  -->
+            <label for="name">Name</label>
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role</label>
+            <!-- inp -->
+            <input type="text" name="myrole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <!-- input:email -->
+            <input type="email" name="myemail">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus</label>
+            <!-- this field only except number and (e) -->
+            <input type="number" name="mynumber" id="">
+        </div>
+        <br>
+        <div>
+            <input type="date" name="mydate" id="">
+        </div>
+        <br>
+        <div>
+            Are you eligible? <input type="checkbox" name="myeligibility">
+        </div>
+        <br>
+        <div>
+            <!-- name=female: this name must be same for 3 radios button male and female -->
+            Gender: Male <input type="radio" name="mygender" id="">Female <input type="radio" name="mygender" id="">
+            Other: <input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            Please Write about yourself:
+            <br>
+            <!-- textarea -->
+            <textarea name="mytext" cols="30" rows="5">hangu</textarea>
+        </div>
+        <br>
+        <div>
+            <label for="mycar">Mycar</label>
+            <select name="indica" id="mycar">
+                <!-- selected: is used to select one option by default -->
+                <option value="jeep">jeep</option>
+                <option value="jeep" selected>Car</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!-- input:submit -->
+            <!-- submit: send data to the backend  -->
+            <input type="submit" value="Submit Now">
+            <!-- reset: mean clear the input of user from the form -->
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+<br>
+</html>
