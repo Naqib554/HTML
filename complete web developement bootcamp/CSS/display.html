@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            width: 500px;
+        }
+        .top {
+            /* note: we can set width only  the block element */
+            border: 3px solid red;
+            width: 777px;
+            margin: auto;
+        }
+
+        h3 {
+            font-style: italic;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            /* width: 100px; */
+            /* margin-left: 80px; */
+        }
+
+        .box {
+            background-color: green;
+            /* display: inline; */
+            border: 3px solid red;
+            padding: 23px;
+
+            margin: 4px 0px;
+            /* we can set width inline block el */
+            display: inline-block;
+            width: 33%;
+        }
+        .container{
+            width: 500px;
+            margin: auto;
+        }
+        /* .move{
+            margin-left: 10px;
+            margin-top: 20px;
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="image.jpg" width="33px" height="33px">
+        <h3>blog of naqib ullah</h3>
+    </header>
+    <div class="container">
+        <div class="box move">
+            <h class="head">heading</h>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ea harum doloribus reiciendis, magni
+                deleniti
+                aperiam esse, dolore dolores eos optio. Ex tempora est qui temporibus numquam, doloribus accusamus
+                molestiae
+                illo quis totam soluta!</p>
+        </div>
+        <div class="box move">
+            <h class="head">heading</h>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ea harum doloribus reiciendis, magni
+                deleniti
+                aperiam esse, dolore dolores eos optio. Ex tempora est qui temporibus numquam, doloribus accusamus
+                molestiae
+                illo quis totam soluta!</p>
+        </div>
+        <div class="box move">
+            <h class="head">heading</h>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ea harum doloribus reiciendis, magni
+                deleniti
+                aperiam esse, dolore dolores eos optio. Ex tempora est qui temporibus numquam, doloribus accusamus
+                molestiae
+                illo quis totam soluta!</p>
+        </div>
+    </div>
+</body>
+
+</html>
