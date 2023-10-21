@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Toturial</title>
+    <style>
+        .container{
+            height: 444px;
+            width: 100%;
+            border: 2px solid blue;
+            /* initialize the container as a flexbox */
+            display: flex;
+            /* flex properties for flexbox container */
+            /* (Default value of flex direction as row) */
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* this is the most important feature */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row-reverse wrap; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content:space-around ; */
+
+            /* by default align-item:flex-start */
+            /* align-items: flex-start; */
+            /* align-items: center;
+            align-items: flex-end; */
+            align-items: stretch;
+        }
+        .item{
+            width: 150px;
+            height: 200px;
+            background-color: rgb(14, 227, 67);
+            border:4px solid rgb(228, 27, 27);
+            margin: 3px;
+            padding: 4px;
+        }
+        #item-1{
+            order: 1;
+            flex-grow: 2000;
+            flex-shrink: 2000;
+        }
+        #item-2{
+            order: 3;
+            flex-shrink: 1000;
+            flex-grow: 2000;
+
+        }
+        #item-3{
+            /* align-self: flex-end; */
+            /* align-self: flex-start; */
+            align-self: center;
+
+            order: 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is a Flexbox Toturial</h3>
+    <!-- class=container is a flexbox container -->
+    <div class="container"> 
+        <!-- div.item#item-$*4 -->
+        <!-- all of the bellow six div are items of the flexbox container -->
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <!-- <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">fifth box</div>
+        <div class="item" id="item-6">sixth box</div> -->
+    </div>
+</body>
+</html>
