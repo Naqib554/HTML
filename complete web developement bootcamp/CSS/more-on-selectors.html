@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h2{
+            background-color: red;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+    }
+    /* inside any div tag if p tag exist apply the css on this that may be one or more */
+    /* div p{
+        background-color: green;
+        color: yellow;
+    } */
+
+    /* this select only the p tag inside the li tag  */
+    /* div li p{
+        background-color: green;
+        color: yellow;
+    } */
+
+    /* this selects all the li tag inside any div tag */
+    /* div li {
+        background-color: green;
+        color: yellow;
+    } */
+
+        /* select direct child of div tag */
+    /* div > p {
+        background-color: green;
+        color: yellow;
+    } */
+
+
+    /*The adjacent sibling selector is used to select an element that is directly after another specific element  */
+    div + p {
+        background-color: green;
+        color: yellow;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h2> This is more on selectors</h2>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="items"><p>this is another peragraph inside the li</p></li>
+                <li>this will not effected </li>
+                <p>hangu main bazar </p>
+            </ul>
+            <p>This is a peragraph</p>
+        </div>
+        <p> This is another peragraph</p>
+    </div>
+    <p>This is the outermost peragraph</p>
+</body>
+</html>
