@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box {
+            text-align: center;
+            font-size: 22px;
+            background-color: rgb(243, 16, 16);
+            color: rgb(232, 235, 232);
+            display: none;
+        }
+
+        /* media query is just like the if statement if true then the defined css will applied on the element */
+        @media (max-width: 300px) {
+            #box-1 {
+                display: block;
+                color: yellow;
+                background-color: black;
+            }
+        }
+
+        @media (min-width:300px) and (max-width: 500px) {
+            #box-2 {
+                display: block;
+                color: rgb(231, 235, 243);
+                background-color: rebeccapurple;
+            }
+        }
+
+        @media (min-width:500px) and (max-width: 800px) {
+            #box-2 {
+                display: block;
+                color: rgb(13, 85, 228);
+                background-color: rgb(229, 222, 236);
+            }
+        }
+
+        @media (min-width:800px) and (max-width: 1000px) {
+            #box-2 {
+                display: block;
+                color: rgb(228, 13, 13);
+                background-color: rgb(12, 7, 18);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">mai ek iphone houn</div>
+    <div class="box" id="box-2">mai ek tablet houn</div>
+    <div class="box" id="box-3">mai ek computer houn</div>
+    <div class="box" id="box-4">mai ek wide computer screen houn</div>
+</body>
+</html>
