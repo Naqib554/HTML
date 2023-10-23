@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+     <style>
+
+        body{
+            background-color: rgb(2, 23, 7);
+            color: rgb(249, 232, 232);
+            font-family: 'Alumni Sans Collegiate One', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Tilt Neon', sans-serif;
+            
+        }
+
+        /* note: this is the technique while design the web  */
+        header::before{
+
+            content: "";
+            background: url(https://cdn.pixabay.com/photo/2016/02/17/19/08/lotus-1205631_1280.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.6;
+            top: 0;
+            left: 0;
+
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+            font-weight: bold;
+
+        }
+        li{
+            list-style: none;
+            padding: 31px 28px;
+
+        }
+        section{
+            height: 300px;
+            margin: -70px 119px;
+            padding: 13px 6px;
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            align-items: center;
+            /* justify-content: center; */
+
+        }
+        h1{
+            font-size: 4rem;
+            padding-bottom:40px;
+
+        }
+        p{
+            text-align: center;
+        }
+        /* section::before{
+            content: "this is a content";
+        } */
+
+        /* section::after{
+            content: "this is a content";
+        } */
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+        <h1> Wellcome to the Coding world</h1>
+        
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iste.
+             Nostrum repudiandae provident necessitatibus numquam rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <hr>
+             . </P>
+        </section>
+    </header>
+    </body>
+</html>
