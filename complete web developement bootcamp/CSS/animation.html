@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and inimation </title>
+    <style>
+        .container {
+            background-color: yellowgreen;
+
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: green;
+            position: relative;
+            /* animation-name: naqib; */
+            animation-name: naqib1;
+            /* animation-duration: 1s; */
+            animation-duration: 8s;
+            animation-iteration-count: 3;
+            /* animation-iteration-count: infinite; */
+            /* animation-fill-mode: alternate; */
+            /* slow start and end fast */
+            /* animation-timing-function: ease-in; */
+            /*  fast start and end slow*/
+            /* animation-timing-function: ease-out; */
+            /* start and end fast and center is slow */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+        }
+
+        @keyframes naqib1 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+               
+            }
+
+        }
+
+
+
+        @keyframes naqib {
+            from {
+                width: 200px;
+
+            }
+
+            to {
+                width: 800px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+
+</html>
