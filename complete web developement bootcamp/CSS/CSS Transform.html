@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Tuturial</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            height: 80vh;
+            width: 100%;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: burlywood;
+            /* transition: all 1s ease-in-out; */
+            transition: all 0.5s ease-in-out;
+        }
+        .box:hover{
+            /* transform: rotate(45deg); */
+            /* transform: rotate(482deg); */
+            /* transform: skew(20deg); */
+            /* transform: scale(0.5); */
+            /* transform: scale(1.2); */
+
+
+            /* translate function used for movement */
+            /* transform: translatex(200px); */
+            /* transform: translatey(200px); */
+
+            /* move box x and y direction at onece */
+            transform: translate(123px,123px);
+
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="text">This is a box</div>
+        </div>
+    </div>
+</body>
+
+</html>
