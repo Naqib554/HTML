@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position task</title>
+    <style>
+        .container{
+            display: flex;
+            width: 50vw;
+            height: 80vh;
+            background-color: rgb(232, 236, 232);
+            border: 2px solid red;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto; 
+            margin-top: 80px;    
+            position: relative;       
+        }
+        .text
+        {
+            position:relative;
+            background-color: red;
+            border: 2px solid green;
+            font-size: 19px;
+            width: 25vw;
+            height: 40vh;
+        }
+        h3{
+            position: absolute;
+            bottom: 250px;
+            /* right: -300px; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h3>Wellcome to the hangu campus</h3>
+        </div>
+    </div>
+</body>
+</html>
