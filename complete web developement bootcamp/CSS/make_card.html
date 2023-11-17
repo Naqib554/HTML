@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make card</title>
+    <style>
+        *{
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px 20px;
+            width: 100%;
+            height: 100vh;
+            background-color: yellow;
+        }
+        .card{            
+            border: 2px solid red;
+            width: 15%;
+            height: 200px;
+            background-color: aqua;
+        }
+        /* the bellow width:100% fill only the card width:10% */
+        .card .image{
+            background-color: red;
+            width: 100%;
+            height: 150px;
+            
+        }
+        /* we give the child size according to parent in this case .title is the child of card  */
+        .card .title{
+            background-color: rgb(209, 209, 188);
+            width: 100%;
+            height: 20px;
+        }
+        .dec{
+            background-color: mediumaquamarine;
+            width: 100%;
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">apple</div>
+            <div class="dec">this is apple </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">apple</div>
+            <div class="dec">this is apple </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">apple</div>
+            <div class="dec">this is apple </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">apple</div>
+            <div class="dec">this is apple </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">apple</div>
+            <div class="dec">this is apple </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">apple</div>
+            <div class="dec">this is apple </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">apple</div>
+            <div class="dec">this is apple </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">apple</div>
+            <div class="dec">this is apple </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">apple</div>
+            <div class="dec">this is apple </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">banana</div>
+            <div class="dec">this is banana </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">orange</div>
+            <div class="dec">this is orange </div>
+        </div>
+        <div class="card">
+            <div class="image">image</div>
+            <div class="title">graps</div>
+            <div class="dec">this is graps </div>
+        </div>
+    </div>
+</body>
+</html>
